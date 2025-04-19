@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OTP Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="page-title">OTP Generator</h1>
+
+  
+  <div class="container">
+    
+
+    <div class="input-row">
+      <label for="otpLength">OTP Length:</label>
+      <input type="number" id="otpLength" min="1" max="10" value="6" />
+    </div>
+
+    <button onclick="generateOTP()">Generate OTP</button>
+    <p id="otpOutput">Your OTP will appear here</p>
+  </div>
+
+  <footer>
+    <p>DSA Project by Shlok Chorge</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

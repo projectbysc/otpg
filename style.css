@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2d545e, #12343b); 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title {
+  color: #e1b382; 
+  text-align: center;
+  margin-bottom: 3rem;  
+  font-size: 2.2rem;
+}
+
+
+.container {
+  background: #fff5d7;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margintop: -0.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem; 
+  margin-bottom: 1.5rem;
+}
+
+.input-row label {
+  font-size: 1.2rem;
+  color: #12343b;
+}
+
+.input-row input[type="number"] {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  width: 80px;
+  border: 2px solid #c89666;
+  border-radius: 8px;
+  color: #12343b;
+  background-color: #fdfaf6;
+  text-align: center;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #e1b382; 
+  color: #12343b;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #c89666; 
+  transform: scale(1.05);
+}
+
+
+#otpOutput {
+  margin-top: 3rem;
+  
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d545e; 
+}
+
+
+footer {
+  margin-top: 2rem;
+  color: #e1b382; 
+  font-size: 0.95rem;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  font-weight: 500;
+}
+
+footer p {
+  margin: 2px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
